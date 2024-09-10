@@ -8,3 +8,8 @@ Elanikud peavad parima hinna leidmiseks otsima läbi kõikide erinevate toidukau
 
 Brendt ja Mathias tegelevad rohkem programmi backendiga ja Karel frontendiga.
 
+Projekti pealkiri: DrinkViewer
+
+Projekti lühikirjeldus on järgnev:
+
+
