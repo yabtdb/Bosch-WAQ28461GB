@@ -18,3 +18,8 @@ Trello: https://trello.com/invite/b/66e00a7c36bd292eca0f253c/ATTIff4b8b9924d3b65
 
 paberprototüüp: https://www.canva.com/design/DAGQWWuHJ8M/rXpP0hlUgv9oEL1ioxkmow/edit?utm_content=DAGQWWuHJ8M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
+Karel: 
+
+veebilehe link: https://karel696969.pythonanywhere.com/
+
+Disainin avalehe, teen headeri, loon nuppe
