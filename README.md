@@ -23,3 +23,7 @@ Karel:
 veebilehe link: https://karel696969.pythonanywhere.com/
 
 Disainin avalehe, teen headeri, loon nuppe
+
+Brendt: 
+
+
