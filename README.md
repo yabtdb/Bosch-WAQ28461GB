@@ -16,4 +16,5 @@ Teeme veebilehe, kus on võimalik otsida erinevatest joogikateooriatest kõige o
 
 Trello: https://trello.com/invite/b/66e00a7c36bd292eca0f253c/ATTIff4b8b9924d3b65616eeb76630047fc7AB838BA2/bosch
 
+paberprototüüp: https://www.canva.com/design/DAGQWWuHJ8M/rXpP0hlUgv9oEL1ioxkmow/edit?utm_content=DAGQWWuHJ8M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
