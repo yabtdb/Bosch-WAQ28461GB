@@ -20,7 +20,7 @@ paberprototüüp: https://www.canva.com/design/DAGQWWuHJ8M/rXpP0hlUgv9oEL1ioxkmo
 
 Karel: 
 
-veebilehe link: https://karel696969.pythonanywhere.com/
+veebilehe link: https://karel696969.pythonanywhere.com/avaleht.html
 
 Disainin avalehe, teen headeri, loon nuppe
 
