@@ -7,17 +7,20 @@
 </head>
 <body>
     <button>Tere!</button>
-    <form method="post"><input type="checkbox" id = "pood1" value="Coop" name="pood">
+    <form action="/joogid", method="GET">
+        <input type="checkbox" id = "pood1" value="Coop" name="pood">
         <label for="pood1"> Coop</label><br>
         <input type="checkbox" id = "pood2" value="Rimi" name="pood">
         <label for="pood2"> Rimi</label><br>
         <input type="checkbox" id = "pood3" value="Selver" name="pood">
         <label for="pood3"> Selver</label><br>
         <input type="checkbox" id = "pood4" value="Prisma" name="pood">
-        <label for="pood4"> Coop</label><br>
+        <label for="pood4"> Prisma</label><br>
         <input type="submit" value="Submit">
     </form>
-    
+    <h3>
+        	<p>Siin on poed: {{ poed2 }}</p>
+    </h3>
     
 </body>
 </html>
