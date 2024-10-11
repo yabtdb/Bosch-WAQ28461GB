@@ -26,4 +26,6 @@ Disainin avalehe, teen headeri, loon nuppe
 
 Brendt: 
 
+Mathias: Tegin andmete failist lugemise flaski
+
 
