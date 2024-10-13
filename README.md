@@ -24,7 +24,16 @@ veebilehe link: https://karel696969.pythonanywhere.com/avaleht.html
 
 Disainin avalehe, teen headeri, loon nuppe
 
-Brendt: 
+Brendt: Tegin flaskiga nupu, millega saab teisele lehele ning poe filtreerimise süsteemi.
+Juhend:
+
+Vajalik on Flask'i moodul.
+
+Tuleb alla tõmmata app.py, avaleht.html ja joogid.html ning need peab panema samasse kausta. 
+avaleht.html ja joogid.html tuleb panna eraldi kausta nimega "templates" (nagu ka Brendtprototüüp kaustas).
+Siis saab tööle panna app.py programmi.
+
+Avalehelt saab minna edasi teisele lehele, kus saab valid poe/poed ning see tagastab igale poele omased joogid. 
 
 Mathias: Tegin andmete failist lugemise flaski
 
