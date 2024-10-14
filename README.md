@@ -35,6 +35,17 @@ Siis saab tööle panna app.py programmi.
 
 Avalehelt saab minna edasi teisele lehele, kus saab valid poe/poed ning see tagastab igale poele omased joogid. 
 
-Mathias: Tegin andmete failist lugemise flaski
+Mathias: Tegin andmete failist lugemise flaskis
+
+JUHEND:
+1. Vajalik Flask'i moodul
+2. "mathias_prot kaustas on drinking.zip kaust, see tuleb alla laadida ja vajutada "extract all"(kaustas on drinking kaust, milles on on templates kaust, app.py ja joogid.txt fail).
+3. Kõik failid peavad asetsema täpselt nii nagu on Mathiase "drinking" kaustas.
+4. Käivitada tuleb app.py ja valida tuleb alumine veebiaadress:
+   * Running on http://127.0.0.1:5000
+   * Running on http://192.168.1.199:5000 <- näeb välja midagi sellist
+
+Tulemuseks on failist lugemine, kus öeldakse, mis joogid on millistes poodides saadaval, koos hindadega. 
+
 
 
