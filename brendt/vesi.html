@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h2 {text-align: center; display: inline;}
+    h1 {text-align: center;}
+    p {text-align: center;}
+    div {text-align: center;}
+    .button1 {text-align: center; background-color: #EE1414; color: #FFFFFF; width: 350px; height: 60px; font-size: 200%;
+        padding: 0; border: none;
+    }
+    .pealkiri { text-align: center; font-size: 450%
+    }
+    .button2{text-align: center; background: url(vesi.jpg); height: 500px; width: 350px;
+
+    }
+    a {
+        text-decoration: none;
+    }
+    input[type='checkbox'] {
+    -webkit-appearance:none;
+    width:30px;
+    height:30px;
+    background:white;
+    border-radius:5px;
+    border:2px solid #555;
+    }
+    input[type='checkbox']:checked {
+    background: #abd;
+    }
+    </style>
+<body>
+    <a href="avaleht.html"><h1 class="pealkiri" style="color: #000000">DrinkViewer</h1></a>
+
+    <div style="margin-left: 15px">
+        <a href="vesi.html"><button class="button1" style="background-color: #05668D">Vesi</button></a>
+        <a href="karastusjoogid.html"><button class="button1">Karastusjoogid</button></a>
+        <a href="alkohol.html"><button class="button1">Alkohol</button></a>
+    </div>
+    <br>
+    <h1>Vesi</h1>
+    <div style="text-align: center;">
+        <h2 style="margin-left: 50px">Coop</h2>
+        <h2 style="margin-left: 80px">Selver</h2>
+        <h2 style="margin-left: 110px">Prisma</h2>
+        <h2 style="margin-left: 140px">Rimi</h2>
+    </div>
+    <div style="display: inline;">
+        <h2 style="text-align: left; margin-left: 435px;">Filtreeri poe järgi:</h2>
+        <form action="/vesi.html", method="GET">
+            <input type="checkbox" id = "pood1" value="Coop" name="pood">
+            <label for="pood1"> Coop</label><br>
+            <input type="checkbox" id = "pood2" value="Rimi" name="pood">
+            <label for="pood2"> Rimi</label><br>
+            <input type="checkbox" id = "pood3" value="Selver" name="pood">
+            <label for="pood3"> Selver</label><br>
+            <input type="checkbox" id = "pood4" value="Prisma" name="pood">
+            <label for="pood4"> Prisma</label><br>
+            <input type="submit" value="Filtreeri">
+        </form>>
+        Siin on poed: {{ poed2 }}
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3 style="text-align: left; margin-left:  435px;">Saaremaa vesi (gaasiga)</h3>
+</body>
+</html>
