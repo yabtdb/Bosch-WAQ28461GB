@@ -26,7 +26,8 @@ Disainin avalehe, teen headeri, loon nuppe, lisasin pildid ja jookide nimed
 
 JUHEND: Mine leheküljele  https://karel696969.pythonanywhere.com/avaleht.html (hetkel ei tööta, vajab parandust), kuid teised alamleheküljed  https://karel696969.pythonanywhere.com/vesi.html  https://karel696969.pythonanywhere.com/karastusjoogid.html ja  https://karel696969.pythonanywhere.com/alkohol.html töötavad
 
-Brendt: Tegin flaskiga nupu, millega saab teisele lehele ning poe filtreerimise süsteemi.
+Brendt: Tegin flaskiga nupu, millega saab teisele lehele ning poe filtreerimise süsteemi. Programm on leitav Brendtprototüüp kaustast.
+
 Juhend:
 
 Vajalik on Flask'i moodul.
