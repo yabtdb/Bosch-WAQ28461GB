@@ -16,7 +16,8 @@ def avaleht():           # Definerrib funktsiooni
 
 @app.route('/avaleht.html')
 def index():
-    return render_template('avaleht.html') # malli renderdamine
+    joogid = loe_failist('joogid.txt')
+    return render_template('avaleht.html', joogid = joogid) # malli renderdamine
 @app.route('/alkohol.html')
 def alkohol():
     return render_template('alkohol.html')
@@ -25,13 +26,14 @@ def karastusjoogid():
     return render_template('karastusjoogid.html')
 @app.route('/vesi.html', methods=['GET', 'POST'])
 def vesi():
-    
+        joogid = loe_failist('joogid.txt')
         poed = {}
         joogidC = ["vesi", "coca-cola", "jäätis"]
         joogidR = ["limpa", "marinaad", "süütevedelik"]
         joogidS = ["maasikad", "kolmteist", "vs"]
         joogidP = ["pepsi", "leonardo", "plastiliin"]
         tooted = []
+        hinnad = []
         
         
         valik = request.args.getlist('pood') or request.form.getlist('pood')
@@ -43,13 +45,16 @@ def vesi():
         
         for l in range(len(valik)):
             if valik[l] == "Coop":
-                for m in range(len(joogidC)):
-                     tooted.append(joogidC[m])
+                for m in range(len(joogid)):
+                    if joogid[m][2] == "Coop":
+                        tooted.append(joogid[m][0])
+                        hinnad.append(joogid[m][1])
                     
             if valik[l] == "Rimi":
-                for m in range(len(joogidR)):
-                    tooted.append(joogidR[m])
-                    
+                for m in range(len(joogid)):
+                    if joogid[m][2] == "Rimi":
+                        tooted.append(joogid[m][0])
+                        hinnad.append(joogid[m][1])
                     
             if valik[l] == "Selver":
                 for m in range(len(joogidS)):
@@ -61,6 +66,6 @@ def vesi():
                     tooted.append(joogidP[m])
 
         
-        return render_template('vesi.html', poed2=valik, tooted2=tooted)
+        return render_template('vesi.html', poed2=valik, tooted=tooted)
 if __name__ == '__main__':
     app.run()
