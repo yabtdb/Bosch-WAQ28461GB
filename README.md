@@ -12,7 +12,7 @@ Projekti pealkiri: DrinkViewer
 
 Projekti lühikirjeldus on järgnev: 
 
-Teeme veebilehe, kus on võimalik otsida erinevatest joogikateooriatest kõige odavam liitri hinnaga jook. Nt "karastusjoogid" ja leiad sealt nimekirjast, et kõige odavam on fanta. Näitab, millistes populaarsemates toidupoes on otsitud joogi hind kõige odavam.
+Teeme veebilehe, kus on võimalik otsida erinevatest joogikateooriatest kõige odavama hinnaga jook. Nt "karastusjoogid" ja leiad sealt nimekirjast, et kõige odavam on fanta. Näitab, millistes populaarsemates toidupoes on otsitud joogi hind kõige odavam.
 
 Trello: https://trello.com/invite/b/66e00a7c36bd292eca0f253c/ATTIff4b8b9924d3b65616eeb76630047fc7AB838BA2/bosch
 
