@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrinkViewer</title>
+</head>
+<style>
+    h2 {text-align: center; display: inline;}
+    h1 {text-align: center;}
+    p {text-align: center;}
+    div {text-align: center;}
+    .button1 {text-align: center; background-color: #EE1414; color: #FFFFFF; width: 350px; height: 60px; font-size: 200%;
+        padding: 0; border: none;
+    }
+    .pealkiri { text-align: center; font-size: 450%; }
+    .button3 {background: url(/static/nestea.jpg); height: 250px; width: 200px; margin-right: 20px; background-size:cover; background-position:center;}
+    .button4 {background: url(/static/cocacola.jpg); height: 250px; width: 200px; margin-right: 20px; background-size:cover; background-position:center;}
+    .button5 {background: url(/static/sprite.png); height: 250px; width: 200px; margin-right: 20px; background-size:cover; background-position:center;}
+    .button6 {background: url(/static/fanta.jpg); height: 250px; width: 200px; margin-right: 20px; background-size:cover; background-position:center;}
+    .list-item {
+        display: flex;
+        align-items: center;
+        margin-left: 435px;
+        margin-bottom: 40px;
+    }
+    .list-item h3 {
+        margin: 0 20px 0 0;
+    }
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+        margin: 0;
+    }
+    ul li {
+        text-align: left;
+    }
+    .filter-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .filter-checkboxes {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+</style>
+<body>
+    <a href="avaleht.html" style="text-decoration: none;"><h1 class="pealkiri" style="color: #000000">DrinkViewer</h1></a>
+
+    <div style="margin-left: 15px">
+        <a href="vesi.html"><button class="button1">Vesi</button></a>
+        <a href="karastusjoogid.html"><button class="button1" style="background-color: #05668D">Karastusjoogid</button></a>
+        <a href="alkohol.html"><button class="button1">Alkohol</button></a>
+    </div>
+    <br>
+    <h1>Karastusjoogid</h1>
+
+    <!-- Filtreerimise osa -->
+    <div class="filter-container">
+        <form action="/karastusjoogid.html" method="GET">
+            <div class="filter-checkboxes">
+                <div>
+                    <h2>Coop</h2>
+                    <input type="checkbox" id="pood1" value="Coop" name="pood">
+                </div>
+                <div>
+                    <h2>Selver</h2>
+                    <input type="checkbox" id="pood2" value="Selver" name="pood">
+                </div>
+                <div>
+                    <h2>Prisma</h2>
+                    <input type="checkbox" id="pood3" value="Prisma" name="pood">
+                </div>
+                <div>
+                    <h2>Rimi</h2>
+                    <input type="checkbox" id="pood4" value="Rimi" name="pood">
+                </div>
+                <input type="submit" value="Filtreeri" style="margin-left: 20px;">
+            </div>
+        </form>
+    </div>
+
+    <!-- Toote nimekiri -->
+    <div class="list-item">
+        <button class="button3"></button>
+        <div>
+            <h3>Nestea</h3>
+            <ul>
+                {%if not poed2 %}
+                    {% for jook in karastusjoogid if jook[0] == 'Nestea' %}
+                    <li>{{ jook[2] }} - {{ jook[1] }} €</li>
+                    {% endfor %}
+                {% else %}
+                    {% for jook in karastusjoogid if jook[0] == 'Nestea' and jook[2] in poed2 %}
+                    <li>{{ jook[2] }} - {{ jook[1] }} €</li>
+                    {% endfor %}
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+
+    <div class="list-item">
+        <button class="button4"></button>
+        <div>
+            <h3>Coca-Cola</h3>
+            <ul>
+                {%if not poed2 %}
+                    {% for jook in karastusjoogid if jook[0] == 'Coca-Cola' %}
+                    <li>{{ jook[2] }} - {{ jook[1] }} €</li>
+                    {% endfor %}
+                {% else %}
+                    {% for jook in karastusjoogid if jook[0] == 'Coca-Cola' and jook[2] in poed2 %}
+                    <li>{{ jook[2] }} - {{ jook[1] }} €</li>
+                    {% endfor %}
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+
+    <div class="list-item">
+        <button class="button5"></button>
+        <div>
+            <h3>Sprite</h3>
+            <ul>
+                {%if not poed2 %}
+                    {% for jook in karastusjoogid if jook[0] == 'Sprite' %}
+                    <li>{{ jook[2] }} - {{ jook[1] }} €</li>
+                    {% endfor %}
+                {% else %}
+                    {% for jook in karastusjoogid if jook[0] == 'Sprite' and jook[2] in poed2 %}
+                    <li>{{ jook[2] }} - {{ jook[1] }} €</li>
+                    {% endfor %}
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+
+    <div class="list-item">
+        <button class="button6"></button>
+        <div>
+            <h3>Fanta</h3>
+            <ul>
+                {%if not poed2 %}
+                    {% for jook in karastusjoogid if jook[0] == 'Fanta' %}
+                    <li>{{ jook[2] }} - {{ jook[1] }} €</li>
+                    {% endfor %}
+                {% else %}
+                    {% for jook in karastusjoogid if jook[0] == 'Fanta' and jook[2] in poed2 %}
+                    <li>{{ jook[2] }} - {{ jook[1] }} €</li>
+                    {% endfor %}
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
