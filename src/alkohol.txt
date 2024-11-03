@@ -1,0 +1,19 @@
+Sommersby pirni,1.99,Coop
+Sommersby pirni,1.99,Selver
+Sommersby pirni,1.99,Prisma
+Sommersby pirni,1.95,Rimi
+
+Fizz pirni,1.55,Coop
+Fizz pirni,1.49,Selver
+Fizz pirni,1.59,Prisma
+Fizz pirni,1.85,Rimi
+
+Tanker,1.59,Coop
+Tanker,1.49,Selver
+Tanker,1.39,Prisma
+Tanker,1.79,Rimi
+
+KOFF,1.79,Coop
+KOFF,1.99,Selver
+KOFF,2.09,Prisma
+KOFF,2.19,Rimi
