@@ -1,0 +1,19 @@
+Saaremaa vesi,0.49,Coop
+Saaremaa vesi,0.55,Selver
+Saaremaa vesi,0.49,Prisma
+Saaremaa vesi,0.45,Rimi
+
+Neptunas,0.75,Coop
+Neptunas,0.91,Selver
+Neptunas,0.85,Prisma
+Neptunas,0.76,Rimi
+
+Evian,1.09,Coop
+Evian,1.11,Selver
+Evian,1.09,Prisma
+Evian,1.09,Rimi
+
+Fiji,3.35,Coop
+Fiji,3.60,Selver
+Fiji,3.48,Prisma
+Fiji,3.78,Rimi
